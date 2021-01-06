@@ -252,10 +252,7 @@ syn region  rustAsmOptionsGroup start="options\s*(" end=")" contained contains=r
 syn keyword rustAsmOptionsKey options contained
 syn keyword rustAsmOptions pure nomem readonly preserves_flags noreturn nostack att_syntax contained
 
-" Folding rules {{{2
-" Trivial folding rules to begin with.
-" FIXME: use the AST to make really good folding
-syn region rustFoldBraces start="{" end="}" transparent fold
+" Folding rules: NO FOLDING
 
 if !exists("b:current_syntax_embed")
     let b:current_syntax_embed = 1
